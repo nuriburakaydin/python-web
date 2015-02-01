@@ -1,0 +1,10 @@
+<!doctype html>
+<title>form</title>
+<form name="form1" action="" method="post">
+Name: <input type="text" name="name"><br />
+<textarea name="message" rows="4" cols="39"></textarea><br />
+<input type="submit" value="Send">
+</form><br />
+{% for message in messages %}
+<b>{{ message.name}}</b> says; <br/ ><i>{{ message.message }}</i><br /><br />
+{% endfor %}
